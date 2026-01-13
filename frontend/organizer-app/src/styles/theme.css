@@ -1,0 +1,76 @@
+/* Organizer App - Energetic Creative Theme */
+:root {
+  /* Primary Colors - Vibrant Orange/Coral */
+  --org-primary: #ff6b35;
+  --org-primary-dark: #e55a2b;
+  --org-primary-light: #ff8c5a;
+  
+  /* Accent Colors - Warm Tones */
+  --org-accent: #ffa726;
+  --org-accent-dark: #fb8c00;
+  --org-accent-light: #ffb74d;
+  
+  /* Secondary Colors - Complementary */
+  --org-secondary: #e74c3c;
+  --org-secondary-dark: #c0392b;
+  --org-secondary-light: #ec7063;
+  
+  /* Status Colors */
+  --org-success: #27ae60;
+  --org-warning: #f39c12;
+  --org-error: #e74c3c;
+  --org-info: #3498db;
+  
+  /* Neutral Colors */
+  --org-bg: #fef9f7;
+  --org-surface: #ffffff;
+  --org-border: #ffe5dc;
+  --org-text: #2c2c2c;
+  --org-text-secondary: #6b6b6b;
+  --org-text-muted: #a0a0a0;
+  
+  /* Sidebar */
+  --org-sidebar-bg: linear-gradient(180deg, #ff6b35 0%, #e55a2b 100%);
+  --org-sidebar-text: #ffffff;
+  --org-sidebar-hover: rgba(255, 255, 255, 0.15);
+  --org-sidebar-active: rgba(255, 255, 255, 0.25);
+  
+  /* Shadows */
+  --org-shadow-sm: 0 1px 2px 0 rgba(255, 107, 53, 0.1);
+  --org-shadow: 0 1px 3px 0 rgba(255, 107, 53, 0.15), 0 1px 2px 0 rgba(255, 107, 53, 0.1);
+  --org-shadow-md: 0 4px 6px -1px rgba(255, 107, 53, 0.2), 0 2px 4px -1px rgba(255, 107, 53, 0.15);
+  --org-shadow-lg: 0 10px 15px -3px rgba(255, 107, 53, 0.25), 0 4px 6px -2px rgba(255, 107, 53, 0.15);
+  --org-shadow-xl: 0 20px 25px -5px rgba(255, 107, 53, 0.3), 0 10px 10px -5px rgba(255, 107, 53, 0.2);
+  
+  /* Typography */
+  --org-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --org-font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Spacing */
+  --org-spacing-xs: 0.25rem;
+  --org-spacing-sm: 0.5rem;
+  --org-spacing-md: 1rem;
+  --org-spacing-lg: 1.5rem;
+  --org-spacing-xl: 2rem;
+  --org-spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --org-radius-sm: 0.5rem;
+  --org-radius-md: 0.75rem;
+  --org-radius-lg: 1rem;
+  --org-radius-xl: 1.25rem;
+  --org-radius-2xl: 1.5rem;
+  
+  /* Transitions */
+  --org-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --org-transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --org-transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Responsive Breakpoints */
+  --org-mobile: 320px;
+  --org-mobile-landscape: 568px;
+  --org-tablet: 768px;
+  --org-tablet-landscape: 1024px;
+  --org-desktop: 1280px;
+  --org-desktop-lg: 1536px;
+}

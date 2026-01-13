@@ -1,0 +1,98 @@
+@import './styles/theme.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--admin-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Prevent zoom on iOS inputs */
+@media screen and (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+code {
+  font-family: var(--admin-font-mono);
+}
+
+#app,
+#root {
+  min-height: 100vh;
+}
+
+.loading {
+  text-align: center;
+  padding: var(--admin-spacing-xl);
+  color: var(--admin-text-secondary);
+}
+
+/* Real-world responsive breakpoints */
+/* Mobile First Approach */
+
+/* Small Mobile: 320px - 479px */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Large Mobile: 480px - 767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Tablet: 768px - 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Desktop: 1024px - 1279px */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Large Desktop: 1280px+ */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Touch-friendly targets */
+button,
+a,
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  /* Touch devices */
+  button:hover,
+  a:hover {
+    /* Remove hover effects on touch devices */
+  }
+}

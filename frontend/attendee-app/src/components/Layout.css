@@ -1,0 +1,288 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--attendee-bg);
+}
+
+.navbar {
+  background: var(--attendee-surface);
+  box-shadow: var(--attendee-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--attendee-border);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--attendee-spacing-md) var(--attendee-spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--attendee-spacing-lg);
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--attendee-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--attendee-spacing-md);
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-menu a {
+  padding: var(--attendee-spacing-sm) var(--attendee-spacing-md);
+  color: var(--attendee-text);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: var(--attendee-radius-md);
+  transition: var(--attendee-transition);
+  position: relative;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a:hover {
+  background: var(--attendee-bg);
+  color: var(--attendee-primary);
+}
+
+.nav-menu a.active {
+  color: var(--attendee-primary);
+  font-weight: 600;
+}
+
+.nav-menu a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: var(--attendee-spacing-md);
+  right: var(--attendee-spacing-md);
+  height: 2px;
+  background: var(--attendee-gradient-primary);
+  border-radius: 2px;
+}
+
+.nav-login-link {
+  color: var(--attendee-text-secondary) !important;
+}
+
+.nav-register-link {
+  background: var(--attendee-gradient-primary);
+  color: white !important;
+  padding: var(--attendee-spacing-sm) var(--attendee-spacing-lg) !important;
+  border-radius: var(--attendee-radius-lg) !important;
+  font-weight: 600 !important;
+}
+
+.nav-register-link:hover {
+  background: var(--attendee-gradient-primary) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: var(--attendee-shadow-md);
+  opacity: 0.95;
+}
+
+.nav-register-link.active::after {
+  display: none;
+}
+
+.nav-logout-btn {
+  background: var(--attendee-error);
+  color: white;
+  border: none;
+  padding: var(--attendee-spacing-sm) var(--attendee-spacing-lg);
+  border-radius: var(--attendee-radius-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--attendee-transition);
+  min-height: 44px;
+}
+
+.nav-logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: var(--attendee-shadow-md);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: var(--attendee-gradient-primary);
+  color: white;
+  border: none;
+  border-radius: var(--attendee-radius-md);
+  padding: var(--attendee-spacing-sm);
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--attendee-shadow-md);
+  transition: var(--attendee-transition);
+}
+
+.mobile-menu-toggle:hover {
+  transform: scale(1.05);
+  box-shadow: var(--attendee-shadow-lg);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: var(--attendee-surface);
+  box-shadow: var(--attendee-shadow-lg);
+  border-bottom: 1px solid var(--attendee-border);
+  z-index: 999;
+  padding: var(--attendee-spacing-md);
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: var(--attendee-spacing-md);
+  color: var(--attendee-text);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: var(--attendee-radius-md);
+  margin-bottom: var(--attendee-spacing-xs);
+  transition: var(--attendee-transition);
+}
+
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  background: var(--attendee-bg);
+  color: var(--attendee-primary);
+}
+
+.mobile-link {
+  display: block;
+  padding: var(--attendee-spacing-md);
+  color: var(--attendee-text);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: var(--attendee-radius-md);
+  margin-bottom: var(--attendee-spacing-xs);
+  transition: var(--attendee-transition);
+}
+
+.mobile-link:hover,
+.mobile-link.active {
+  background: var(--attendee-bg);
+  color: var(--attendee-primary);
+}
+
+.mobile-link-primary {
+  background: var(--attendee-gradient-primary);
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.mobile-link-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--attendee-shadow-md);
+}
+
+.mobile-logout-btn {
+  display: block;
+  width: 100%;
+  padding: var(--attendee-spacing-md);
+  background: var(--attendee-error);
+  color: white;
+  border: none;
+  border-radius: var(--attendee-radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--attendee-transition);
+  margin-top: var(--attendee-spacing-sm);
+}
+
+.mobile-logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: var(--attendee-shadow-md);
+}
+
+.main-content {
+  flex: 1;
+  padding: var(--attendee-spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablet and below */
+@media screen and (max-width: 1023px) {
+  .nav-container {
+    padding: var(--attendee-spacing-md);
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .main-content {
+    padding: var(--attendee-spacing-lg) var(--attendee-spacing-md);
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 767px) {
+  .nav-container {
+    padding: var(--attendee-spacing-sm) var(--attendee-spacing-md);
+  }
+
+  .nav-logo {
+    font-size: 1.25rem;
+  }
+
+  .main-content {
+    padding: var(--attendee-spacing-md);
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 479px) {
+  .nav-logo {
+    font-size: 1.125rem;
+  }
+
+  .nav-container {
+    padding: var(--attendee-spacing-sm);
+  }
+
+  .main-content {
+    padding: var(--attendee-spacing-sm);
+  }
+
+  .mobile-menu {
+    top: 60px;
+  }
+}

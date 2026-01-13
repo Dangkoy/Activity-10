@@ -1,0 +1,82 @@
+/* Attendee App - Friendly Modern Theme */
+:root {
+  /* Primary Colors - Modern Purple/Blue Gradient */
+  --attendee-primary: #667eea;
+  --attendee-primary-dark: #5568d3;
+  --attendee-primary-light: #7c8ef5;
+  
+  /* Accent Colors - Vibrant Pink */
+  --attendee-accent: #f093fb;
+  --attendee-accent-dark: #e879f9;
+  --attendee-accent-light: #f5b3ff;
+  
+  /* Secondary Colors - Teal */
+  --attendee-secondary: #48bb78;
+  --attendee-secondary-dark: #38a169;
+  --attendee-secondary-light: #68d391;
+  
+  /* Status Colors */
+  --attendee-success: #10b981;
+  --attendee-warning: #f59e0b;
+  --attendee-error: #ef4444;
+  --attendee-info: #3b82f6;
+  
+  /* Neutral Colors */
+  --attendee-bg: #f7fafc;
+  --attendee-surface: #ffffff;
+  --attendee-border: #e2e8f0;
+  --attendee-text: #1a202c;
+  --attendee-text-secondary: #4a5568;
+  --attendee-text-muted: #718096;
+  
+  /* Gradient Backgrounds */
+  --attendee-gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --attendee-gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --attendee-gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  
+  /* Sidebar */
+  --attendee-sidebar-bg: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  --attendee-sidebar-text: #ffffff;
+  --attendee-sidebar-hover: rgba(255, 255, 255, 0.15);
+  --attendee-sidebar-active: rgba(255, 255, 255, 0.25);
+  
+  /* Shadows */
+  --attendee-shadow-sm: 0 1px 2px 0 rgba(102, 126, 234, 0.1);
+  --attendee-shadow: 0 1px 3px 0 rgba(102, 126, 234, 0.15), 0 1px 2px 0 rgba(102, 126, 234, 0.1);
+  --attendee-shadow-md: 0 4px 6px -1px rgba(102, 126, 234, 0.2), 0 2px 4px -1px rgba(102, 126, 234, 0.15);
+  --attendee-shadow-lg: 0 10px 15px -3px rgba(102, 126, 234, 0.25), 0 4px 6px -2px rgba(102, 126, 234, 0.15);
+  --attendee-shadow-xl: 0 20px 25px -5px rgba(102, 126, 234, 0.3), 0 10px 10px -5px rgba(102, 126, 234, 0.2);
+  
+  /* Typography */
+  --attendee-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --attendee-font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Spacing */
+  --attendee-spacing-xs: 0.25rem;
+  --attendee-spacing-sm: 0.5rem;
+  --attendee-spacing-md: 1rem;
+  --attendee-spacing-lg: 1.5rem;
+  --attendee-spacing-xl: 2rem;
+  --attendee-spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --attendee-radius-sm: 0.5rem;
+  --attendee-radius-md: 0.75rem;
+  --attendee-radius-lg: 1rem;
+  --attendee-radius-xl: 1.25rem;
+  --attendee-radius-2xl: 1.5rem;
+  --attendee-radius-full: 9999px;
+  
+  /* Transitions */
+  --attendee-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --attendee-transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --attendee-transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Responsive Breakpoints */
+  --attendee-mobile: 320px;
+  --attendee-mobile-landscape: 568px;
+  --attendee-tablet: 768px;
+  --attendee-tablet-landscape: 1024px;
+  --attendee-desktop: 1280px;
+  --attendee-desktop-lg: 1536px;
+}
